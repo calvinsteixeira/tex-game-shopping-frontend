@@ -1,0 +1,13 @@
+/* RESET */
+* {
+  box-sizing: border-box;
+  font-style: none;
+  text-decoration: none;
+  padding: 0;
+}
+
+/* VARIABLES */
+
+:root {
+  base-color: ;
+}
