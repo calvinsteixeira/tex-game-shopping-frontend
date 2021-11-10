@@ -5,6 +5,8 @@
   text-decoration: none;
   padding: 0;
   margin: 0;
+  border: none;
+  outline: none;
 }
 
 /* VARIABLES */
@@ -24,9 +26,12 @@
 /* LOGO SIDE SECTION */
 
 section#logoSide {
+  display: flex;
   width: 1242px;
   height: 100vh;
   background: var(--lightgrey-color);
+  justify-content: center;
+  align-items: center;
 }
 
 /* FORM SIDE SECTION */
@@ -35,4 +40,147 @@ section#formSide {
   width: 678px;
   height: 100vh;
   background: var(--darkgrey-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section#formSide h1 {
+  font-family: Roboto, sans-serif;
+  font-weight: 900;
+  font-size: 48px;
+  color: white;
+}
+
+section#formSide #container {
+  width: 405px;
+  height: 703px;
+  position: relative;
+}
+
+section#formSide #emailElements {
+  display: grid;
+  gap: 10px;
+  margin-top: 100px;
+}
+
+section#formSide #passwordElements {
+  display: grid;
+  gap: 10px;
+  margin-top: 30px;
+}
+
+.styleLabel {
+  color: white;
+  font-family: Roboto, sans-serif;
+  font-weight: 900;
+  font-size: 20px;
+}
+
+.styleInput {
+  width: 405px;
+  height: 57px;
+  background: var(--lightgrey-color);
+  padding: center;
+  border-radius: 5px;
+  color: white;
+  font-family: Roboto, sans-serif;
+  font-weight: 900;
+  font-size: 20px;
+  padding: 9px 19px 9px 19px;
+}
+
+section#formSide #forgotPassword {
+  color: var(--orange-color);
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  top: 285px;
+  left: 250px;
+  position: absolute;
+}
+
+section#formSide #showAndHiddenPasswordButton {
+  color: white;
+  opacity: 50%;
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  top: 333px;
+  left: 320px;
+  position: absolute;
+}
+
+section#formSide form button {
+  margin-top: 76px;
+  border-radius: 5px;
+  color: white;
+  width: 405px;
+  height: 57px;
+  background: var(--orange-color);
+  font-family: Roboto, sans-serif;
+  font-weight: 900;
+  font-size: 24px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+section#formSide form button:hover {
+  background: #ff8a31;
+}
+
+section#formSide #container h3 {
+  color: white;
+  margin-top: 161px;
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+}
+
+section#formSide #container h3 span a {
+  color: var(--orange-color);
+  position: relative;
+  font-family: Roboto, sans-serif;
+  font-weight: 900;
+  font-size: 20px;
+}
+
+section#formSide #container h3 span a:after {
+  content: '';
+  width: 0%;
+  display: block;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  transition: 0.4s;
+}
+
+section#formSide #container h3 span a:hover:after {
+  content: '';
+  height: 2px;
+  width: 100%;
+  position: absolute;
+  background: #ff6d00;
+  transition: 0.4s;
+}
+
+section#formSide #container #email {
+  border: var(--darkgrey-color) solid 1px;
+  transition: 0.1s;
+}
+
+section#formSide #container #password {
+  border: var(--darkgrey-color) solid 1px;
+  transition: 0.1s;
+}
+
+section#formSide #container #email::placeholder {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+section#formSide #container #password::placeholder {
+  font-size: 16px;
+  font-weight: 400;
 }
