@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt_BR">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -8,13 +8,67 @@
     <!-- Style -->
     <link rel="stylesheet" href="./style.css" />
     <!-- Fonts -->
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Tex Game Shopping Login</title>
   </head>
   <body>
     <main>
       <div id="viewPort">
-        <section id="formSide"></section>
-        <section id="logoSide"></section>
+        <section id="formSide">
+          <div id="container">
+            <h1>Faça Login!</h1>
+            <form action="">
+              <div id="emailElements">
+                <label class="styleLabel" for="email">E-mail:</label>
+                <input
+                  placeholder="Digite seu E-mail"
+                  pattern=".*@\.com\.*"
+                  autocomplete="off"
+                  class="styleInput"
+                  id="email"
+                  type="text"
+                  title="Por favor, digite um e-mail válido"
+                />
+              </div>
+              <div id="passwordElements">
+                <label class="styleLabel" for="password">Senha:</label>
+
+                <input
+                  pattern="[0-9]{4,8}"
+                  minlength="4"
+                  maxlength="8"
+                  placeholder="Digite sua senha"
+                  autocomplete="off"
+                  class="styleInput"
+                  id="password"
+                  type="password"
+                  title="Digite uma senha númerica entre 4 a 8 caracteres"
+                />
+              </div>
+
+              <button type="submit">Entrar</button>
+            </form>
+            <a id="forgotPassword" href="">Esqueci minha senha</a>
+            <p
+              onclick="togglePasswordShow()"
+              id="showAndHiddenPasswordButton"
+              href=""
+            >
+              Mostrar
+            </p>
+            <h3>
+              Não possui uma conta? <span><a href="">Registre-se</a></span>
+            </h3>
+          </div>
+        </section>
+        <section id="logoSide">
+          <img src="./assets/images/Logo.png" alt="Logo Tex Game Shopping" />
+        </section>
       </div>
     </main>
 
