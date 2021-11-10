@@ -4,10 +4,35 @@
   font-style: none;
   text-decoration: none;
   padding: 0;
+  margin: 0;
 }
 
 /* VARIABLES */
 
 :root {
-  base-color: ;
+  --orange-color: #ff6d00;
+  --darkgrey-color: #161616;
+  --lightgrey-color: #242424;
+}
+
+#viewPort {
+  width: 100%;
+  height: 100vh;
+  display: inline-flex;
+}
+
+/* LOGO SIDE SECTION */
+
+section#logoSide {
+  width: 1242px;
+  height: 100vh;
+  background: var(--lightgrey-color);
+}
+
+/* FORM SIDE SECTION */
+
+section#formSide {
+  width: 678px;
+  height: 100vh;
+  background: var(--darkgrey-color);
 }
