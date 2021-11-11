@@ -28,10 +28,15 @@ function login() {
     username: username,
     userpassword: userpassword
   }
+
   axios
     .post(API_URL, {
       username: user.username,
       password: user.userpassword
     })
-    .then(response => console.log(response))
+    .then(response => {
+      const response = response
+      console.log(response)
+      console.log(response.data.errorCode)
+    })
 }
