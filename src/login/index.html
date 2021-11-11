@@ -24,14 +24,15 @@
             <h1>Faça Login!</h1>
             <form action="">
               <div id="emailElements">
-                <label class="styleLabel" for="email">E-mail:</label>
+                <label class="styleLabel" for="email">Usuário:</label>
                 <input
                   placeholder="Digite seu E-mail"
-                  pattern=".*@\.com\.*"
+                  pattern=".*@.*\.com\.*"
                   autocomplete="off"
                   class="styleInput"
                   id="email"
-                  type="text"
+                  type="email"
+                  name="email"
                   title="Por favor, digite um e-mail válido"
                 />
               </div>
@@ -39,26 +40,20 @@
                 <label class="styleLabel" for="password">Senha:</label>
 
                 <input
-                  pattern="[0-9]{4,8}"
-                  minlength="4"
-                  maxlength="8"
                   placeholder="Digite sua senha"
                   autocomplete="off"
                   class="styleInput"
                   id="password"
                   type="password"
-                  title="Digite uma senha númerica entre 4 a 8 caracteres"
+                  name="password"
+                  title="Digite uma senha entre 4 e 8 caracteres"
                 />
               </div>
 
-              <button type="submit">Entrar</button>
+              <button onclick="login()" type="button">Entrar</button>
             </form>
             <a id="forgotPassword" href="">Esqueci minha senha</a>
-            <p
-              onclick="togglePasswordShow()"
-              id="showAndHiddenPasswordButton"
-              href=""
-            >
+            <p onclick="togglePasswordView()" id="showAndHiddenPasswordButton">
               Mostrar
             </p>
             <h3>
@@ -73,7 +68,7 @@
     </main>
 
     <!-- Libs import -->
-    <script src="/node_modules/axios/dist/axios.min.js" type="module"></script>
+    <script src="/node_modules/axios/dist/axios.min.js"></script>
     <!-- Main Script -->
     <script src="./login.js"></script>
   </body>

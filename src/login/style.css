@@ -98,9 +98,10 @@ section#formSide #forgotPassword {
   top: 285px;
   left: 250px;
   position: absolute;
+  transition: 0.4s;
 }
 
-section#formSide #showAndHiddenPasswordButton {
+section#formSide #container #showAndHiddenPasswordButton {
   color: white;
   opacity: 50%;
   font-family: Roboto, sans-serif;
@@ -108,6 +109,7 @@ section#formSide #showAndHiddenPasswordButton {
   font-size: 14px;
   top: 333px;
   left: 320px;
+  cursor: pointer;
   position: absolute;
 }
 
@@ -126,7 +128,7 @@ section#formSide form button {
 }
 
 section#formSide form button:hover {
-  background: #ff8a31;
+  background: #ff770f;
 }
 
 section#formSide #container h3 {
@@ -144,6 +146,7 @@ section#formSide #container h3 span a {
   font-family: Roboto, sans-serif;
   font-weight: 900;
   font-size: 20px;
+  transition: 0.4s;
 }
 
 section#formSide #container h3 span a:after {
@@ -161,8 +164,16 @@ section#formSide #container h3 span a:hover:after {
   height: 2px;
   width: 100%;
   position: absolute;
-  background: #ff6d00;
+  background: #ff770f;
   transition: 0.4s;
+}
+
+section#formSide #container h3 span a:hover {
+  color: #ff770f;
+}
+
+section#formSide #container #forgotPassword:hover {
+  color: #ff770f;
 }
 
 section#formSide #container #email {
